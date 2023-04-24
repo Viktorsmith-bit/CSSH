@@ -1,26 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+/* BREAKPOINTS */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.height {
+  height: auto;
+}
+.galeria {
+  height: 16rem;
+  width: 100%;
+}
+.height-image {
+  height: 20rem;
+}
+.width-image {
+  width: 100%;
+}
+.width-perfil {
+  width: 100%;
+}
+.modal-team {
+  width: 100%;
+  height: 27rem;
+}
+.panam {
+  height: 20rem;
+  width: 100%;
+}
+.absolute-capas {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.absolute-leyenda {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.absolute-tilelayer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.height-visor {
+  height: 26.7rem;
+}
+.width-creditos {
+  width: 100%;
+}
+.height-section {
+  height: auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (min-width: 768px) {
+  .height {
+    height: auto;
   }
-  body {
-    color: white;
-    background: black;
+  .height-image {
+    height: 25rem;
   }
+  .width-image {
+    width: 100%;
+  }
+  .width-perfil {
+    width: 22.7rem;
+  }
+  .modal-team {
+    width: 27rem;
+    height: 33rem;
+  }
+  .galeria {
+    height: 16rem;
+    width: 20rem;
+  }
+  .panam {
+    height: 25rem;
+    width: 100%;
+  }
+  .height-visor {
+    height: 26.7rem;
+  }
+  .absolute-capas {
+    position: absolute;
+    bottom: 58px;
+    right: 12px;
+  }
+  .absolute-leyenda {
+    position: absolute;
+    bottom: 58px;
+    right: 12px;
+  }
+  .absolute-tilelayer {
+    position: absolute;
+    bottom: 58px;
+    right: 12px;
+  }
+  .height-section {
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .height {
+    height: 40rem;
+  }
+  .height-image {
+    height: 37rem;
+  }
+  .width-image {
+    width: 51rem;
+  }
+  .width-perfil {
+    width: 26rem;
+  }
+  .modal-team {
+    width: 35rem;
+    height: 35rem;
+  }
+  .modal-datos {
+    width: 29rem;
+    height: 35rem;
+  }
+  .galeria {
+    height: 16rem;
+    width: 19.4rem;
+  }
+  .height-proyecto {
+    height: 37rem;
+  }
+  .height-opcion {
+    height: 33rem;
+  }
+  .panam {
+    height: 37rem;
+    width: 51rem;
+  }
+  .absolute-capas {
+    position: absolute;
+    top: 12px;
+    right: 62px;
+  }
+  .absolute-leyenda {
+    position: absolute;
+    top: 56px;
+    right: 62px;
+  }
+  .absolute-tilelayer {
+    position: absolute;
+    top: 100px;
+    right: 62px;
+  }
+  .height-visor {
+    height: 26.7rem;
+  }
+  .width-creditos {
+    width: 27.5rem;
+  }
+  .height-section {
+    height: 40rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .height {
+    height: 50rem;
+  }
+  .panam {
+    height: 44rem;
+    width: 60rem;
+  }
+  .height-image {
+    height: 44rem;
+  }
+  .width-image {
+    width: 60rem;
+  }
+}
+
+
+.image {
+  background-image: url("../public/fondos/Laguna_pequeña.JPG");
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-iat{
+  background-image: url("../public/fondos/Laguna_pequeña.JPG");
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-criosfera{
+  background-image: url("../public/section/Criosfera.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-clima{
+  background-image: url("../public/section/Clima.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-seguridad{
+  background-image: url("../public/section/SeguridadHídrica_Paron.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.opacity {
+  background: rgba(255, 255, 255, 0.7);
+}
+.text-color {
+  color: #4f4e50;
+}
+.cover {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.background-color{
+  background-color: rgb(239, 239, 239);
+}
+.background-navMobile{
+  background-color: rgb(220, 220, 220);
+}
+.background {
+  background-color: #434040;
+}
+.border-color {
+  border: solid 1px #5b5b5f;
+}
+.opacity-image {
+  background: rgba(20, 20, 20, 0.7);
+}
+.opacity-black{
+  background: rgba(20, 20, 20, 0.9);
+}
+.opacity-button {
+  background: rgba(20, 20, 20, 0.8);
 }
